@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title website
+form(action='/submit-teacher-data' method='post')
+  | First Name: 
+  input(name='firstName' type='text')
+  br
+  |         Last Name: 
+  input(name='lastName' type='text')
+  br
+  input(type='submit')
+
+form(action='/submit-student-data' method='post')
+  | First Name:
+  input(name='firstName' type='text')
+  br
+  |       Last Name : 
+  input(name='lastName' type='text')
+  br
+  input(type='submit')
+
+form(action='/submit-left' method='post')
+  |Left:
+  input(type='submit')
+
+  form(action='/submit-left' method='post')
+  |Right:
+  input(type='submit')
+
+  form(action='/submit-left' method='post')
+  |Up:
+  input(type='submit')
+
+  form(action='/submit-left' method='post')
+  |Down:
+  input(type='submit')
