@@ -21,7 +21,7 @@ console.log(name + 'done!!!');
 res.redirect('/');
 
 });
-router.post('/submit-student-data', function (req, res) {
+router.post('/submit-student-data'), function (req, res) {
   var name = req.body.firstName + ' ' + req.body.lastName;
 
   //res.send(name + ' Submitted Successfully!');
@@ -31,3 +31,6 @@ router.post('/submit-student-data', function (req, res) {
   console.log(name + 'FINISHED');
 res.redirect('/');a 1234
 module.exports = router;
+  
+  
+}
