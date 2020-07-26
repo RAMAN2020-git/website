@@ -21,8 +21,7 @@ router.post('/submit-teacher-data', function (req, res) {
   res.redirect('/');
 
 });
-
-router.post('/submit-student-data', function (req, resZxv, next  ) {
+router.post('/submit-student-data'), function (req, res) {
   var name = req.body.firstName + ' ' + req.body.lastName;
 
   //res.send(name + ' Submitted Successfully!');
