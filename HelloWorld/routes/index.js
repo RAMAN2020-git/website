@@ -30,6 +30,6 @@ router.post('/submit-student-data'), function (req, res) {
 
   console.log(name + 'FINISHED');
   res.redirect('/');
-});
+};
   module.exports = router;
 
