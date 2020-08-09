@@ -21,15 +21,48 @@ router.post('/submit-teacher-data', function (req, res) {
   res.redirect('/');
 
 });
-router.post('/submit-student-data'), function (req, res) {
+router.post('/submit-down', function (req, res) {
   var name = req.body.firstName + ' ' + req.body.lastName;
 
   //res.send(name + ' Submitted Successfully!');
 
   //port.write('leftdown')
 
-  console.log(name + 'FINISHED');
+  console.log('down');
   res.redirect('/');
-};
-  module.exports = router;
+});
+
+router.post('/submit-up', function (req, res) {
+  var name = req.body.firstName + ' ' + req.body.lastName;
+
+  //res.send(name + ' Submitted Successfully!');
+
+  //port.write('leftdown')
+
+  console.log('up');
+  res.redirect('/');
+});
+
+router.post('/submit-left', function (req, res) {
+  var name = req.body.firstName + ' ' + req.body.lastName;
+
+  //res.send(name + ' Submitted Successfully!');
+
+  //port.write('leftdown')
+
+  console.log('left');
+  res.redirect('/');
+});
+
+router.post('/submit-right', function (req, res) {
+  var name = req.body.firstName + ' ' + req.body.lastName;
+
+  //res.send(name + ' Submitted Successfully!');
+
+  //port.write('leftdown')
+
+  console.log('right');
+  res.redirect('/');
+});
+module.exports = router;
 
