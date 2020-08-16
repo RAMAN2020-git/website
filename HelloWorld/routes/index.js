@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 const SerialPort = require('serialport');
-//const Readline = require('@serialport/parser-readline')
-//const port = new SerialPort('COM5', { baudRate: 115200 })
+const Readline = require('@serialport/parser-readline')
+const port = new SerialPort('COM4', { baudRate: 115200 })
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -26,7 +26,7 @@ router.post('/submit-down', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-  //port.write('leftdown')
+  port.write('on')
 
   console.log('down');
   res.redirect('/');
@@ -37,7 +37,7 @@ router.post('/submit-up', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-  //port.write('leftdown')
+  port.write('off')
 
   console.log('up');
   res.redirect('/');
@@ -48,9 +48,9 @@ router.post('/submit-left', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-  //port.write('leftdown')
+  port.write('close')
 
-  console.log('left');
+  console.log('close');
   res.redirect('/');
 });
 
@@ -59,9 +59,9 @@ router.post('/submit-right', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-  //port.write('leftdown')
+port.write('open')
 
-  console.log('right');
+  console.log('open');
   res.redirect('/');
 });
 module.exports = router;
