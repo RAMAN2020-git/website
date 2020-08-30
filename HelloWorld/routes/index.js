@@ -21,36 +21,14 @@ router.post('/submit-teacher-data', function (req, res) {
   res.redirect('/');
 
 });
-router.post('/submit-down', function (req, res) {
-  var name = req.body.firstName + ' ' + req.body.lastName;
-
-  //res.send(name + ' Submitted Successfully!');
-
-  port.write('on')
-
-  console.log('down');
-  res.redirect('/');
-});
-
-router.post('/submit-up', function (req, res) {
-  var name = req.body.firstName + ' ' + req.body.lastName;
-
-  //res.send(name + ' Submitted Successfully!');
-
-  port.write('off')
-
-  console.log('up');
-  res.redirect('/');
-});
-
 router.post('/submit-left', function (req, res) {
   var name = req.body.firstName + ' ' + req.body.lastName;
 
   //res.send(name + ' Submitted Successfully!');
 
-  port.write('close')
+  port.write('left')
 
-  console.log('close');
+  console.log('left');
   res.redirect('/');
 });
 
@@ -59,7 +37,29 @@ router.post('/submit-right', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-port.write('open')
+  port.write('right')
+
+  console.log('right');
+  res.redirect('/');
+});
+
+router.post('/submit-up', function (req, res) {
+  var name = req.body.firstName + ' ' + req.body.lastName;
+
+  //res.send(name + ' Submitted Successfully!');
+
+  port.write('up')
+
+  console.log('close');
+  res.redirect('/');
+});
+
+router.post('/submit-down', function (req, res) {
+  var name = req.body.firstName + ' ' + req.body.lastName;
+
+  //res.send(name + ' Submitted Successfully!');
+
+port.write('down')
 
   console.log('open');
   res.redirect('/');
