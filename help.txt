@@ -1,0 +1,1 @@
+npx cross-env DEBUG=HelloWorld:* npm start ! runs localhost thing
