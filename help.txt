@@ -1,1 +1,4 @@
-npx cross-env DEBUG=HelloWorld:* npm start ! runs localhost thing
+npx cross-env DEBUG=HelloWorld:* npm start // runs localhost thing
+git config user.name "#yourname" // to tell your name , must be done on every new computer
+git config user.email "#youremail" // to tell your email , must be done on every new computer
+git commit -m "#yourmessage" // to give a message for the latest update
