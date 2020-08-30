@@ -16,6 +16,7 @@ git commit -m "#yourmessage" // to give a message for the latest update
 https://docs.microsoft.com/en-us/windows/nodejs/beginners // microsoft guide 2 node.js
 https://github.com/RAMAN2020-git/website // repository link 2 website
 
+
                                      OTHER CODES 
 
   port.write('left\n');
