@@ -1,0 +1,16 @@
+                                        NPX
+
+npx cross-env DEBUG=HelloWorld:* nodemon // runs localhost thing
+
+
+                                        GIT
+
+git config user.name "#yourname" // to tell your name , must be done on every new computer
+git config user.email "#youremail" // to tell your email , must be done on every new computer
+git commit -m "#yourmessage" // to give a message for the latest update
+
+
+                                      WEBSITES
+
+https://docs.microsoft.com/en-us/windows/nodejs/beginners // microsoft guide 2 node.js
+https://github.com/RAMAN2020-git/website // repository link 2 website
