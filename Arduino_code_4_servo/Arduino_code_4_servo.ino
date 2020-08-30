@@ -51,7 +51,7 @@ void loop() {
 
   if (Serial.available() >0) {
 
-    a = Serial.readString();
+    a = Serial.readStringUntil('\n');
     Serial.print(a);
 /*
   if (a == "open"){

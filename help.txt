@@ -1,5 +1,6 @@
                                         NPX
 
+npm install // installs important libraries
 npx cross-env DEBUG=HelloWorld:* nodemon // runs localhost thing
 
 
@@ -14,3 +15,9 @@ git commit -m "#yourmessage" // to give a message for the latest update
 
 https://docs.microsoft.com/en-us/windows/nodejs/beginners // microsoft guide 2 node.js
 https://github.com/RAMAN2020-git/website // repository link 2 website
+
+                                     OTHER CODES 
+
+  port.write('left\n');
+  port.write(req.body.leftamount + '\n');
+input(name='leftamount' type='text')

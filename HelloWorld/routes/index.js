@@ -26,7 +26,7 @@ router.post('/submit-left', function (req, res) {
 
   //res.send(name + ' Submitted Successfully!');
 
-  port.write('left')
+  port.write('left\n')
 
   console.log('left');
   res.redirect('/');
