@@ -2,6 +2,7 @@
 
 npm install // installs important libraries
 npx cross-env DEBUG=HelloWorld:* nodemon // runs localhost thing
+cd "folder" // opens folder in terminal ex. cd Helloworld
 
 
                                         GIT
